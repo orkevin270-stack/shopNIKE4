@@ -1,0 +1,147 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffaf0;
+  color: #333;
+}
+.mi-titulo {
+font-size: 2em;
+  font-weight: bold; 
+}
+
+header {
+  background: url(descarga.jpeg) center/cover;
+  height: 30vh;
+  width: 100;
+  background-image: url('ron.jpg');
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+}
+.titulo {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 0;
+  padding: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #413c3c93;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.menu a:hover {
+  background-color: #8b4513;
+  border-radius: 5px;
+}
+
+
+.seccion {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.seccion img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.producto {
+  border: 1px solid #ccc;
+  padding: 15px;
+  background-color: #04f1e6;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+}
+
+.producto img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
+
+form label {
+  margin-top: 10px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #6d6d6d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #00880c;
+}
+
+
+footer {
+  background-color: #585858;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+
+@media (max-width: 768px) {
+  .productos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+}
